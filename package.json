@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "---",
   "default": "index.html",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "start": "parcel -p 3000",
+    "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,6 @@
     "@parcel/transformer-sass": "^2.2.1",
     "parcel": "2.2.1"
   },
-  "browserslist": "last 2 versions"
+  "browserslist": "last 2 versions",
+  "engines" : { "node" : ">=12.0.0" } 
 }
