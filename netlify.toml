@@ -1,2 +1,2 @@
  [build]
- command: 'npm i && npm run build'
+ command = 'npm i && npm run build'
