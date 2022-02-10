@@ -6,7 +6,7 @@
   "source": "",
   "scripts": {
     "start": "parcel src/pages/**/*.pug",
-    "build": "parcel build --no-minify src/pages/**/*.pug",
+    "build": "parcel build src/pages/**/*.pug",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node server.js"
   },
@@ -24,8 +24,7 @@
     "@andreyvolokitin/parcel-transformer-handlebars": "^0.0.3",
     "@parcel/transformer-pug": "^2.2.1",
     "@parcel/transformer-sass": "^2.2.1",
-    "parcel": "2.2.1",
-    "parcel-bundler": "^1.4.1"
+    "parcel": "2.2.1"
   },
   "browserslist": "last 2 versions",
   "engines": {
