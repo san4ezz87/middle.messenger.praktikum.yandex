@@ -4,5 +4,7 @@ block linkCss
   link(rel='stylesheet', href='./index.scss')
 
 block content
-  include ../components/header.pug
-  p layout works!!
+  form(action="./chat/chat.html", method="GET")
+    include ../components/input-material/input-material.pug
+    +input-material('text', 'login', 'Name')
+    input(type="submit" value="Save")

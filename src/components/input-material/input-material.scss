@@ -1,0 +1,26 @@
+.input-material {
+  position: relative;
+  padding-top: 21px;
+
+  &__feild {
+    border-color: transparent;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #3369F3;
+    display: block;
+    width: 100%;
+    padding: 7px 0;
+
+    &:focus + .input-material__label {
+      top: 7px;
+    }
+  }
+
+
+  &__label {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    transition: top 0.2s;
+  }
+}
