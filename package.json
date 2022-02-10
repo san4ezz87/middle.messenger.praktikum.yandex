@@ -5,7 +5,7 @@
   "default": "index.html",
   "source": "",
   "scripts": {
-    "start": "parcel src/pages/**/*.pug",
+    "start": "parcel --no-minify src/pages/**/*.pug",
     "build": "parcel build src/pages/**/*.pug",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node server.js"
