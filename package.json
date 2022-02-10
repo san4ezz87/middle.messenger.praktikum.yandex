@@ -2,11 +2,11 @@
   "name": "middle.messenger.praktikum.yandex",
   "version": "1.0.0",
   "description": "---",
-  "default": "index.html",
+  "default": "dist",
   "source": "src",
   "scripts": {
     "start": "parcel src/pages/**/*.pug",
-    "build": "parcel build src/pages/*.pug",
+    "build": "parcel build src/pages/**/*.pug",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node server.js"
   },
