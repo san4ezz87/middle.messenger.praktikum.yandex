@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "---",
   "default": "index.html",
-  "source": "",
+  "source": "src",
   "scripts": {
     "start": "parcel src/pages/**/*.pug",
     "build": "parcel  build src/pages/**/*.pug",
