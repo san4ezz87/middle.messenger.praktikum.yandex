@@ -5,7 +5,7 @@
   "default": "dist",
   "source": "src",
   "scripts": {
-    "start": "parcel src/pages/**/*.pug",
+    "start": "parcel -p 3000 src/pages/**/*.pug",
     "build": "parcel build 'src/pages/**/*.pug'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node server.js"

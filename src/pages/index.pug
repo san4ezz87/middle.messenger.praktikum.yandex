@@ -1,10 +1,19 @@
 extends ../layout/main.pug
+include ../components/input-material/input-material.pug
+include ../components/button/button.pug
 
 block linkCss
   link(rel='stylesheet', href='./index.scss')
 
 block content
-  form(action="./chat/chat.html", method="GET")
-    include ../components/input-material/input-material.pug
-    +input-material('text', 'login', 'Name')
-    input(type="submit" value="Save")
+  .login
+    div.login-form
+      .login-form__title Вход
+      form.login-form__form(action="./chat/chat.html", method="GET")
+        +input-material('text', 'login', 'Логин')
+        +input-material('text', 'password', 'Пароль')
+        .login-form__buttons
+          .login-form__button
+            +button('Войти', 'submit', 'btn-primary btn-stretch')
+          .login-form__button
+            a.btn.btn-link.btn-stretch(href='./sign-up/sign-up.pug') Зарегистрироваться

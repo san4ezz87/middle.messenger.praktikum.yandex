@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 12px;
+    border: 1px solid transparent;
+
+  &-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+
+    &:hover {
+      background-color: #1242f1;
+      border-color: #1242f1;
+    }
+  }
+
+  &-stretch {
+    width: 100%;
+  }
+
+  &-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+}
