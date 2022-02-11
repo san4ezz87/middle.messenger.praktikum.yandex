@@ -11,7 +11,7 @@ block content
       .login-form__title Вход
       form.login-form__form(action="./chat/chat.html", method="GET")
         +input-material('text', 'login', 'Логин')
-        +input-material('text', 'password', 'Пароль')
+        +input-material('password', 'password', 'Пароль')
         .login-form__buttons
           .login-form__button
             +button('Войти', 'submit', 'btn-primary btn-stretch')
