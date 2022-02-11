@@ -2,43 +2,5 @@
 @import "./base.scss";
 @import "../components/input-material/input-material.scss";
 @import "../components/button/button.scss";
+@import "./login-form.scss"
 
-
-
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.login-form{
-  height: 460px;
-  width: 340px;
-  padding: 50px 30px 30px 30px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
-  border-radius: 12px;
-
-  &__title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    color: #1E1E1E;
-  }
-
-  &__form {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding-top: 57px;
-  }
-  &__buttons {
-    margin-top: auto;
-  }
-
-  &__button {
-
-  }
-}
