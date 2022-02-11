@@ -1,6 +1,12 @@
 @import "./reset.scss";
 @import "../components/input-material/input-material.scss";
 
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter/Inter-Regular.ttf");
+}
+
 body {
   background: white;
+  font-family: 'Inter';
 }
