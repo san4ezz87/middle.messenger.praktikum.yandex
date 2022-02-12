@@ -1,6 +1,7 @@
 extends ../../layout/main.pug
 include ../../components/chat-item/chat-item.pug
 include ../../components/link-profile/link-profile.pug
+include ../../components/search-input/search-input.pug
 
 block linkCss
   link(rel='stylesheet', href='../reset.scss')
@@ -12,6 +13,8 @@ block content
     .chat__sidebar
       .chat__profile-link
         +link-profile('Профиль', '../profile/profile.pug')
+      .chat__search
+        +search-input()
       .chat-list
         +chat-item('Андрей', 'Изображение', '10:49', 2)
         +chat-item('Киноклуб', 'Вы: стикер', '15:12')

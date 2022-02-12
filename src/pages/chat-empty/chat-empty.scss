@@ -1,5 +1,6 @@
 @import "../../components/chat-item/chat-item.scss";
 @import "../../components/link-profile/link-profile.scss";
+@import "../../components/search-input/search-input.scss";
 
 .chat {
   height: 100vh;
@@ -9,6 +10,10 @@
     flex-basis: 310px;
     background: #FBFBFB;
     border-right: 1px solid #EAEAEA;
+  }
+
+  &__search {
+    padding: 0 10px 14px 10px;
   }
 
   &__profile-link {
