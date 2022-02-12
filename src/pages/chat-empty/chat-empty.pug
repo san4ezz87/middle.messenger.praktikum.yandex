@@ -1,8 +1,13 @@
 extends ../../layout/main.pug
+include ../../components/chat-item/chat-item.pug
 
 block linkCss
+  link(rel='stylesheet', href='../reset.scss')
+  link(rel='stylesheet', href='../base.scss')
   link(rel='stylesheet', href='./chat-empty.scss')
 
 block content
-  .chat-list
-  .chat-detail
+  div.chat
+    .chat-list
+      +chat-item('Андрей', 'Изображение', '10:49', 2)
+    .chat-detail

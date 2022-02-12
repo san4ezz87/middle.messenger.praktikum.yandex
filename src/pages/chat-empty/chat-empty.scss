@@ -1,3 +1,16 @@
-body {
-  background: red;
+@import "../../components/chat-item/chat-item.scss";
+
+.chat {
+  height: 100vh;
+  display: flex;
+}
+
+.chat-list {
+  width: 310px;
+  background: #FBFBFB;
+  border-right: 1px solid #EAEAEA;
+}
+
+.chat-detail {
+  width: 100%;
 }
