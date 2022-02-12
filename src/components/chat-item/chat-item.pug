@@ -9,7 +9,7 @@ mixin chat-item(name, text, time, messageAmount)
           .chat-item__time #{time}
         .chat-item__bottom
           .chat-item__text #{text}
-                if messageAmount
-          .chat-item__notification #{messageAmount}
+          if messageAmount
+            .chat-item__notification #{messageAmount}
 
 
