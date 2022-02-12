@@ -1,5 +1,6 @@
 extends ../../layout/main.pug
 include ../../components/chat-item/chat-item.pug
+include ../../components/link-profile/link-profile.pug
 
 block linkCss
   link(rel='stylesheet', href='../reset.scss')
@@ -8,11 +9,14 @@ block linkCss
 
 block content
   div.chat
-    .chat-list
-      +chat-item('Андрей', 'Изображение', '10:49', 2)
-      +chat-item('Киноклуб', 'Вы: стикер', '15:12')
-      +chat-item('Day.', 'В 2008 году художник Jon Rafman  начал собирать...', '1 Мая 2020')
-      +chat-item('Андрей', 'Изображение', '10:49', 10)
-      +chat-item('Стас Рогозин', 'И Human Interface Guidelines и Material Design рекомендуют...', 'Пн', 2)
-      +chat-item('Андрей', 'Изображение', '10:49', 2)
-    .chat-detail
+    .chat__sidebar
+      .chat__profile-link
+        +link-profile('Профиль', '../profile/profile.pug')
+      .chat-list
+        +chat-item('Андрей', 'Изображение', '10:49', 2)
+        +chat-item('Киноклуб', 'Вы: стикер', '15:12')
+        +chat-item('Day.', 'В 2008 году художник Jon Rafman  начал собирать...', '1 Мая 2020')
+        +chat-item('Андрей', 'Изображение', '10:49', 10)
+        +chat-item('Стас Рогозин', 'И Human Interface Guidelines и Material Design рекомендуют...', 'Пн', 2)
+        +chat-item('Андрей', 'Изображение', '10:49', 2)
+    .chat-detail Выберите чат чтобы отправить сообщение
