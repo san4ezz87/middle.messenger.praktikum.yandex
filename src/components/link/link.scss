@@ -1,0 +1,15 @@
+.link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+
+  &_blue {
+    color: #3369F3;
+  }
+
+  &_red {
+    color: #FF0000;
+  }
+}
