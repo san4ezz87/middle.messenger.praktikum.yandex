@@ -1,0 +1,9 @@
+include ../link/link.pug
+
+mixin error(errorCode, text, link, linkText)
+  .error
+    .error__code #{errorCode}
+    .error__text #{text}
+    .error__link
+      +link(link, linkText, 'blue')
+
