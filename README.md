@@ -1,3 +1,4 @@
+
 # Чат для свободного общения
 ---
 В чате используется parcel для сборки так же html, scss для визуализации и стилей.
@@ -10,3 +11,5 @@
   - `npm install` — установка стабильной версии,
   - `npm start` — запуск версии для разработчика,
   - `npm run build:prod` — сборка стабильной версии.
+[sprint 1](https://github.com/san4ezz87/middle.messenger.praktikum.yandex/pull/1)
+
