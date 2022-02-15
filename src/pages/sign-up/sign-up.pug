@@ -1,0 +1,28 @@
+extends ../../layout/main.pug
+include ../../components/input-material/input-material.pug
+include ../../components/button/button.pug
+
+
+block linkCss
+  link(rel='stylesheet', href='../reset.scss')
+  link(rel='stylesheet', href='../base.scss')
+  link(rel='stylesheet', href='./sign-up.scss')
+ 
+
+block content
+  .login
+    div.login-form
+      .login-form__title Регистрация
+      form.login-form__form(action="./chat/chat.html", method="GET")
+        +input-material('email', 'email', 'Почта')
+        +input-material('text', 'login', 'Логин')
+        +input-material('text', 'first_name', 'Имя')
+        +input-material('text', 'second_name', 'Фамилия')
+        +input-material('tel', 'phone', 'Телефон')
+        +input-material('password', 'password', 'Пароль')
+        +input-material('password-confirm', 'password-confirm', 'Пароль (ещё раз)')
+        .login-form__buttons
+          .login-form__button
+            +button('Зарегистрироваться', 'submit', 'btn-primary btn-stretch')
+          .login-form__button
+            a.btn.btn-link.btn-stretch(href='../index.pug') Войти

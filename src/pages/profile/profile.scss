@@ -1,0 +1,59 @@
+@import "../../components/property-item/property-item.scss";
+@import "../../components/button-round/button-round.scss";
+@import "../../components/link/link.scss";
+
+.profile {
+  height: 100vh;
+  display: flex;
+
+  &__side {
+    background: #FBFBFB;
+    flex-basis: 64px;
+    border-right: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+  }
+
+  &__icon {
+    width: 130px;
+    min-height: 130px;
+    background: #EFEFEF;
+    border-radius: 50%;
+  }
+
+  &__name {
+    padding-top: 21px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #1E1E1E;
+  }
+
+  &__property-list {
+    padding-top: 50px;
+    width: 510px;
+  }
+
+  &__edit-list {
+    padding-top: 50px;
+  }
+
+  &__edit-item {
+    padding: 10px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid #EAEAEA;
+    }
+  }
+}

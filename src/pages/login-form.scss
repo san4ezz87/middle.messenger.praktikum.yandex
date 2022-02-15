@@ -1,0 +1,40 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form{
+  min-height: 460px;
+  width: 340px;
+  padding: 50px 30px 18px 30px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #1E1E1E;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    flex-grow: 1;
+  }
+  &__buttons {
+    margin-top: auto;
+    padding-top: 47px;
+  }
+
+  &__button:not(:last-child) {
+    padding-bottom: 8px;
+  }
+}

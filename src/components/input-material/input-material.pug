@@ -1,0 +1,4 @@
+mixin input-material(type, name, placeholder, value)
+  div.input-material
+    input.input-material__feild(type=type name=name id='id-'+ name placeholder=' ')
+    label.input-material__label(for='id-' + name) #{placeholder}

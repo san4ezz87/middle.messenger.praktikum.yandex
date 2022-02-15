@@ -1,0 +1,36 @@
+@import "../../components/chat-item/chat-item.scss";
+@import "../../components/link-profile/link-profile.scss";
+@import "../../components/search-input/search-input.scss";
+
+.chat {
+  height: 100vh;
+  display: flex;
+
+  &__sidebar {
+    flex-basis: 310px;
+    background: #FBFBFB;
+    border-right: 1px solid #EAEAEA;
+  }
+
+  &__search {
+    padding: 0 10px 14px 10px;
+  }
+
+  &__profile-link {
+    padding: 21px 10px 23px 0;
+    text-align: end;
+  } 
+}
+
+.chat-detail {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #999999;
+  justify-content: center;
+  flex-grow: 1;
+}

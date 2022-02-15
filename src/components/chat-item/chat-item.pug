@@ -1,0 +1,15 @@
+mixin chat-item(name, text, time, messageAmount)
+  .chat-item
+    .chat-item__line
+    .chat-item__inner
+      .chat-item__thumbnail
+      .chat-item__content
+        .chat-item__top
+          .chat-item__name #{name}
+          .chat-item__time #{time}
+        .chat-item__bottom
+          .chat-item__text #{text}
+          if messageAmount
+            .chat-item__notification #{messageAmount}
+
+
