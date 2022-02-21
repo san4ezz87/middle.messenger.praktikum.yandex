@@ -1,12 +1,5 @@
-extends ../../layout/main.pug
 include ../../components/error/error.pug
-
-block linkCss
-  link(rel='stylesheet', href='../reset.scss')
-  link(rel='stylesheet', href='../base.scss')
-  link(rel='stylesheet', href='./500.scss')
  
-
 block content
   .error-page-500
     +error('500', 'Мы уже фиксим', '../chat-empty/chat-empty.pug', 'Назад к чатам')

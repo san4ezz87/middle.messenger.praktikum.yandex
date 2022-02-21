@@ -1,12 +1,5 @@
-extends ../../layout/main.pug
 include ../../components/error/error.pug
-
-block linkCss
-  link(rel='stylesheet', href='../reset.scss')
-  link(rel='stylesheet', href='../base.scss')
-  link(rel='stylesheet', href='./404.scss')
- 
 
 block content
   .error-page-404
-    +error('404', 'Не туда попали', '../chat-empty/chat-empty.pug', 'Назад к чатам')
+    +error('404', 'Не туда попали', '../chat-empty/chat-empty.html', 'Назад к чатам')

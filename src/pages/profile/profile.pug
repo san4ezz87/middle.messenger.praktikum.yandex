@@ -1,18 +1,11 @@
-extends ../../layout/main.pug
 include ../../components/property-item/property-item.pug
 include ../../components/button-round/button-round.pug
 include ../../components/link/link.pug
 
-
-block linkCss
-  link(rel='stylesheet', href='../reset.scss')
-  link(rel='stylesheet', href='../base.scss')
-  link(rel='stylesheet', href='./profile.scss')
-
 block content
   .profile
     .profile__side
-      +button-round('../chat-empty/chat-empty.pug')
+      +button-round('../chat-empty/chat-empty.html')
     .profile__main
       .profile__icon
       .profile__settings
@@ -26,8 +19,8 @@ block content
           +property-item('Телефон ', '+7 (909) 967 30 30')
         .profile__edit-list
           .profile__edit-item
-            +link('../profile-edit/profile-edit.pug', 'Изменить данные', 'blue')
+            +link('../profile-edit/profile-edit.html', 'Изменить данные', 'blue')
           .profile__edit-item
-            +link('../password-edit/password-edit.pug', 'Изменить пароль', 'blue')
+            +link('../password-edit/password-edit.html', 'Изменить пароль', 'blue')
           .profile__edit-item
-            +link('../index.pug', 'Выйти', 'red')
+            +link('../index.html', 'Выйти', 'red')

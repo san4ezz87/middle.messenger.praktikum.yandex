@@ -1,18 +1,12 @@
-extends ../../layout/main.pug
 include ../../components/chat-item/chat-item.pug
 include ../../components/link-profile/link-profile.pug
 include ../../components/search-input/search-input.pug
-
-block linkCss
-  link(rel='stylesheet', href='../reset.scss')
-  link(rel='stylesheet', href='../base.scss')
-  link(rel='stylesheet', href='./chat-empty.scss')
 
 block content
   div.chat
     .chat__sidebar
       .chat__profile-link
-        +link-profile('Профиль', '../profile/profile.pug')
+        +link-profile('Профиль', '../profile/profile.html')
       .chat__search
         +search-input()
       .chat-list

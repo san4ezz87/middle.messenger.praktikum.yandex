@@ -5,8 +5,8 @@
   "default": "dist",
   "source": "src",
   "scripts": {
-    "start": "parcel -p 3000 src/pages/index.html",
-    "build": "parcel build 'src/pages/index.html'",
+    "start": "parcel -p 3000 src/pages/**/*.html",
+    "build": "parcel build 'src/pages/**/*.html'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node server.js"
   },
