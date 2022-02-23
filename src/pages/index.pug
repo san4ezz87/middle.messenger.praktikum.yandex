@@ -1,15 +1,17 @@
-include ../components/input-material/input-material.pug
-include ../components/button/button.pug
+//- include ../components/input-material/input-material.pug
+//- include ../components/button/button.pug
 
-block content
-  .login
-    div.login-form
-      .login-form__title Вход
-      form.login-form__form(action="./chat-empty/chat-empty.html", method="GET")
-        +input-material('text', 'login', 'Логин')
-        +input-material('password', 'password', 'Пароль')
-        .login-form__buttons
-          .login-form__button
-            +button('Войти', 'submit', 'btn-primary btn-stretch')
-          .login-form__button
-            a.btn.btn-link.btn-stretch(href='./sign-up/sing-up.html') Зарегистрироваться
+//- block content
+//-   .login
+//-     div.login-form
+//-       .login-form__title Вход
+//-       form.login-form__form(action="./chat-empty/chat-empty.html", method="GET")
+//-         +input-material('text', 'login', 'Логин')
+//-         +input-material('password', 'password', 'Пароль')
+//-         .login-form__buttons
+//-           .login-form__button
+//-             +button('Войти', 'submit', 'btn-primary btn-stretch')
+//-           .login-form__button
+//-             a.btn.btn-link.btn-stretch(href='./sign-up/sing-up.html') Зарегистрироваться
+
+div !{ButtonTest}
